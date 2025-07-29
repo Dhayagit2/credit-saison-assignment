@@ -39,7 +39,7 @@ if response1 != "empty":
     ec2_client.stop_instances(InstanceIds=[instance])```
 
 
-
+'''
 this block will be executed to riun the scrit. first block is execute the cronjob.sh which will find the file and if found it will create the file result.txt.
 Second response1 will execute the scrut cat commmand. if the file is not there it will print empty. and if it dont print empty then it'll it will stop the instances.
 Also in the end rm /tmp/results.txt should be added ti remove the file everytime as it will be cronjob. 
